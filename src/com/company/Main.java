@@ -5,29 +5,21 @@ public class Main {
     public static void main(String[] args) {
 
         GameEntity GameEntity = new GameEntity();
-        GameEntity.setBoss("Thanos");
-        GameEntity.setBossAttack(500);
-        GameEntity.setBossHealth(2500);
-        GameEntity.setHero("Thor");
-        GameEntity.setHeroAttack(450);
-        GameEntity.setHeroHealth(1500);
+        GameEntity.setName("Thanos:");   //Имя Босса
+        GameEntity.setAttack(500);       //Урон Босса
+        GameEntity.setHealth(2500);      // Жизнь Босса
 
-        System.out.println(GameEntity.getBoss()
-                + " " + GameEntity.getBossAttack()
-                + " " + GameEntity.getBossHealth());
-
-        System.out.println(GameEntity.getHero()
-                + " " + GameEntity.getHeroAttack()
-                + " " + GameEntity.getHeroHealth());
+        System.out.println(GameEntity.getName()
+                + " " + GameEntity.getAttack()
+                + " " + GameEntity.getHealth());
 
         Weapon weapon = new Weapon();
-        weapon.setWeaponType("Gun");
-        weapon.setWeaponName("Ak-47");
+        weapon.setWeaponType("Gauntlet"); // Тип оружия
+        weapon.setWeaponName("The Infinity Gauntlet"); // Имя оружия
 
         Boss Boss = new Boss();
-        Boss.setWeapon("Ak-47");
-        System.out.println("Boss weapon" + " " + Boss.getWeapon());
-
+        Boss.setWeaponName("The Infinity Gauntlet");
+        System.out.println("Boss weapon:" + " " + Boss.getWeaponName());
 
     }
 }

@@ -4,13 +4,15 @@ public class Boss extends GameEntity {
 
     public String weapon;
 
-    public String getWeapon() {
+    public String getWeaponName() {
         return weapon;
     }
 
-    public void setWeapon(String weapon) {
+    public void setWeaponName(String weapon) {
         this.weapon = weapon;
     }
+
+
 }
 
 

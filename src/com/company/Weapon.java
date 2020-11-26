@@ -5,6 +5,8 @@ public class Weapon {
     private String weaponType;
     private String weaponName;
 
+    public Weapon(){}
+
     public String getWeaponType() {
         return weaponType;
     }
